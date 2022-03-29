@@ -12,6 +12,7 @@
   --container-color: #FAFAFA;
   --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
+  --hover-color: #da3231;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -51,7 +52,8 @@ body.dark-theme {
   --text-color: #BFBFBF;
   --container-color: #212121;
   --container-color-alt: #181616;
-  --body-color: #2B2B2B; 
+  --body-color: #2B2B2B;
+  --hover-color: orange;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -66,7 +68,7 @@ body.dark-theme {
 }
 
 .change-theme:hover {
-  color: var(--title-color);
+  color: var(--hover-color);
 }
 
 /*========== Font size variables to scale cv ==========*/
@@ -91,7 +93,7 @@ body.scale-cv {
 }
 
 .generate-pdf:hover {
-  color: var(--title-color);
+  color: var(--hover-color);
 }
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
@@ -221,9 +223,13 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: .35rem;
+  letter-spacing: .1rem;
   text-align: center;
   margin-bottom: var(--mb-3);
+}
+
+.section-title:hover{
+  color: var(--hover-color);
 }
 
 /*========== LAYOUT ==========*/
@@ -344,13 +350,25 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+.home__img:hover{
+  opacity: 90%;
+}
+
 .home__title {
   font-size: var(--h1-font-size);
+}
+
+.home__title:hover{
+  color: var(--hover-color);
 }
 
 .home__profession {
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.home__profession:hover{
+  color: var(--hover-color);
 }
 
 .home__address {
@@ -399,7 +417,7 @@ img {
 }
 
 .social__link:hover{
-  color: var(--title-color);
+  color: var(--hover-color);
 }
 
 .social__icon {
@@ -629,4 +647,36 @@ img {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
+}
+
+/* Change Text Selection Color */
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: var(--hover-color);
+}
+
+::selection {
+  color: black;
+  background: var(--hover-color);
+}
+
+/* Custom scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--container-color); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--title-color); 
 }

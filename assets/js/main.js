@@ -106,7 +106,7 @@ let resumeButton = document.getElementById('resume-button')
 // Html2pdf options
 let opt = {
     margin:       0,
-    filename:     'Nguyen Tran Thuc - CV Resume.pdf',
+    filename:     'ThucNguyen-Resume.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' }
@@ -128,3 +128,6 @@ resumeButton.addEventListener('click', () => {
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
     setTimeout(removeScale, 50000)
 })
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());

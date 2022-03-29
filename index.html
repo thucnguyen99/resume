@@ -3,25 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- Favicon -->
-        <!-- <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="assets/img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff"> -->
         <link rel="shortcut icon" href="assets/img/favicon.ico">
 
         <!--========== BOX ICONS ==========-->
@@ -30,13 +11,17 @@
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Nguyễn Trần Thức - CV Resume</title>
+        <title>Thuc Nguyen - Resume</title>
     </head>
     <body >
+        <!-- Stop user from printing webpage -->
+        <style type="text/css" media="print">
+            body { visibility: hidden; display: none }
+        </style>
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Zain</a>
+                <a href="#" class="nav__logo">Nguyen Tran Thuc</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -98,25 +83,32 @@
                     <section class="home" id="home">
                         <div class="home__container section bd-grid">
                             <div class="home__data bd-grid">
-                                <img src="assets/img/logoT.jpg" alt="" class="home__img">
+                                <img src="assets/img/logoT.jpg" alt="" class="home__img" title="Hi, Chao xìn">
                                 
-                                <h1 class="home__title">NGUYEN TRAN <b>THUC</b></h1>
-                                <h3 class="home__profession">Web Developer</h3>
+                                <h1 class="home__title">NGUYEN TRAN THUC</h1>
+                                <h3 class="home__profession">Software Engineer</h3>
                             
                                 <div class="">
-                                    <a download="" href="assets/pdf/Nguyen Tran Thuc - CV Resume.pdf" class="home__button-movil">Download</a>
+                                    <a href="ThucNguyen-Resume.pdf" target="_blank" class="home__button-movil">View resume PDF</a>
                                 </div>
                             </div>
 
                             <div class="home__address bd-grid">
                                 <span class="home__information">
-                                    <i class="bx home__icon bx-map"></i>Hai Ba Trung, Ha Noi
+                                    <a class="social__link" href="https://map.google.com" target="_blank">
+                                        <i class="bx home__icon bx-map"></i>Hai Ba Trung, Hanoi, Vietnam
+                                    </a>
+                                    
                                 </span>
                                 <span class="home__information">
-                                    <i class="bx home__icon bx-envelope"></i>tranthuc1199@gmail.com
+                                    <a class="social__link" href="mailto:tranthuc1199@gmail.com">
+                                        <i class="bx home__icon bx-envelope"></i>tranthuc1199@gmail.com
+                                    </a>
                                 </span>
                                 <span class="home__information">
-                                    <i class="bx home__icon bx-phone"></i>+84 382 639 140
+                                    <a class="social__link" href="tel:+84382639140">
+                                        <i class="bx home__icon bx-phone"></i>+84 382 639 140
+                                    </a>
                                 </span>
                             </div>
                         </div>
@@ -133,16 +125,16 @@
                         <h2 class="section-title">SOCIAL</h2>
                         <div class="social__container bd-grid">
                             <a href="https://www.linkedin.com/in/thuc-nguyen-4941181ab/" target="_blank" class="social__link">
-                                <i class="bx social__icon bxl-linkedin-square"></i> @tranthuc99
+                                <i class="bx social__icon bxl-linkedin-square"></i>tranthuc99
                             </a>
                             <a href="https://github.com/thucnguyen99" target="_blank" class="social__link">
-                                <i class="bx social__icon bxl-github"></i> @thucnguyen99
+                                <i class="bx social__icon bxl-github"></i>thucnguyen99
                             </a>
                             <a href="https://facebook.com/tranthuc12321" target="_blank" class="social__link">
-                                <i class="bx social__icon bxl-facebook"></i> @tranthuc12321
+                                <i class="bx social__icon bxl-facebook"></i>tranthuc12321
                             </a>
-                            <a href="https://www.instagram.com/thucthucthucthuc/" target="_blank" class="social__link">
-                                <i class="bx social__icon bxl-instagram"></i> @tranthuc99
+                            <a href="https://twitter.com/tranthuc99" target="_blank" class="social__link">
+                                <i class='bx social__icon bxl-twitter'></i> tranthuc99
                             </a>
                         </div>
                     </section>
@@ -166,20 +158,9 @@
                                     <span class="education__line"></span>
                                 </div>
                                 <div class="education__data bd-grid">
-                                    <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
-                                    <span class="education__studies">Management Information Systems</span>
-                                    <span class="education__year">2018 - 2022</span>
-                                </div>
-                            </div>
-
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-
-                                </div>
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
+                                    <a href="https://hust.edu.vn">
+                                        <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
+                                    </a>
                                     <span class="education__studies">Management Information Systems</span>
                                     <span class="education__year">2018 - 2022</span>
                                 </div>
@@ -192,11 +173,26 @@
 
                                 </div>
                                 <div class="education__data bd-grid">
-                                    <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
+                                    <a href="https://hust.edu.vn">
+                                        <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
+                                    </a>
                                     <span class="education__studies">Management Information Systems</span>
                                     <span class="education__year">2018 - 2022</span>
                                 </div>
                             </div>
+
+                            <!-- <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">HANOI UNIVERSITY OF SCIENCE & TECHNOLOGY</h3>
+                                    <span class="education__studies">Management Information Systems</span>
+                                    <span class="education__year">2018 - 2022</span>
+                                </div>
+                            </div> -->
 
                         </div>
                     </section>
@@ -208,13 +204,13 @@
                         <div class="skills__content bd-grid">
                             <ul class="skills__data">
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> HTML
+                                    <span class="skills__circle"></span> Python
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> CSS
+                                    <span class="skills__circle"></span> C
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> JavaScript
+                                    <span class="skills__circle"></span> Java
                                 </li>
                                 <!-- <li class="skills__name">
                                     <span class="skills__circle"></span> React JS
@@ -223,13 +219,13 @@
                            
                             <ul class="skills__data">
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> CodeIgniter
+                                    <span class="skills__circle"></span> Git/Github
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> Laravel
+                                    <span class="skills__circle"></span> Linux
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> Node JS
+                                    <span class="skills__circle"></span> Docker
                                 </li>
                             </ul>
                         </div>
@@ -248,12 +244,17 @@
                                     <span class="experience__rounder"></span>
                                     <span class="experience__line"></span>
                                 </div>
-
                                 <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">GRAPHIC DESIGNER</h3>
-                                    <span class="experience__company">Sep 2020 - Feb 2021 | La Mona Clinic</span>
+                                    <a href="https://twitter.com/tranthuc99">
+                                        <h3 class="experience__title">Company | Location</h3>
+                                    </a>
+                                    <span class="experience__company">Jan 2022 - Present | Software Engineer</span>
                                     <p class="experience__description">
-                                        Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.
+                                        <ul>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -262,12 +263,17 @@
                                     <span class="experience__rounder"></span>
                                     <span class="experience__line"></span>
                                 </div>
-
                                 <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">PROGRAMMER</h3>
-                                    <span class="experience__company">Jul 2020 - Apr 2021 | Goodeva Technology</span>
+                                    <a href="https://twitter.com/tranthuc99">
+                                        <h3 class="experience__title">Company | Location</h3>
+                                    </a>
+                                    <span class="experience__company">Jan 2022 - Present | Software Engineer</span>
                                     <p class="experience__description">
-                                        Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.
+                                        <ul>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
@@ -276,12 +282,17 @@
                                     <span class="experience__rounder"></span>
                                     <!-- <span class="experience__line"></span> -->
                                 </div>
-
                                 <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">PROGRAMMER</h3>
-                                    <span class="experience__company">Apr 2021 - Now | PT. Bangun Kreatif Abadi </span>
+                                    <a href="https://twitter.com/tranthuc99">
+                                        <h3 class="experience__title">Company | Location</h3>
+                                    </a>
+                                    <span class="experience__company">Jan 2022 - Present | Software Engineer</span>
                                     <p class="experience__description">
-                                        Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.
+                                        <ul>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                            <li>Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</li>
+                                        </ul>
                                     </p>
                                 </div>
                             </div>
