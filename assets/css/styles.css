@@ -228,10 +228,6 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.section-title:hover{
-  color: var(--hover-color);
-}
-
 /*========== LAYOUT ==========*/
 .bd-container {
   max-width: 968px;
@@ -350,25 +346,13 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-.home__img:hover{
-  opacity: 90%;
-}
-
 .home__title {
   font-size: var(--h1-font-size);
-}
-
-.home__title:hover{
-  color: var(--hover-color);
 }
 
 .home__profession {
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
-}
-
-.home__profession:hover{
-  color: var(--hover-color);
 }
 
 .home__address {
@@ -469,6 +453,14 @@ img {
 .education__title,
 .experience__title {
   font-size: var(--h3-font-size);
+}
+
+.education__title:hover{
+  color: var(--hover-color);
+}
+
+.experience__title:hover{
+  color: var(--hover-color);
 }
 
 .education__studies,
@@ -679,4 +671,20 @@ img {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--title-color); 
+}
+
+
+
+
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
 }
