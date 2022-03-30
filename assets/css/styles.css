@@ -336,6 +336,7 @@ img {
 .home__data {
   gap: .5rem;
   text-align: center;
+  height: 20%;
 }
 
 .home__img {
@@ -674,8 +675,10 @@ img {
 }
 
 
-
-
+/* Hover avatar */
+.container{
+  height: 20%;
+}
 
 .overlay {
   position: absolute;
@@ -683,6 +686,7 @@ img {
   width: 100%;
   opacity: 0;
   transition: 1s ease;
+  height: 35%;
 }
 
 .container:hover .overlay {
