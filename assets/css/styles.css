@@ -696,3 +696,7 @@ img {
 a {
   color: var(--hover-color);
 }
+
+.dmm {
+  color: var(--body-color);
+}
